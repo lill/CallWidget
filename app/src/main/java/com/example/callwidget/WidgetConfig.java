@@ -92,7 +92,7 @@ public class WidgetConfig extends Activity {
 
                 appWidgetManager.updateAppWidget(appWidgetId, views);
 
-                Toast.makeText(thisContext, "Widget "+appWidgetId+" is saved with number "+phoneNumber,Toast.LENGTH_SHORT).show();
+                //Toast.makeText(thisContext, "Widget "+appWidgetId+" is saved with number "+phoneNumber,Toast.LENGTH_SHORT).show();
 
                 Intent resultIntent = new Intent();
                 resultIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);

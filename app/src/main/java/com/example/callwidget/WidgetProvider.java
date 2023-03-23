@@ -10,13 +10,13 @@ public class WidgetProvider extends AppWidgetProvider {
 
     private static final int REQUEST_CALL = 1;
 
-    @Override
-    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
-
-        for (int appWidgetId : appWidgetIds) {
-
-            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget);
-
+//    @Override
+//    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+//
+//        for (int appWidgetId : appWidgetIds) {
+//
+//            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget);
+//
 //            if(ContextCompat.checkSelfPermission(context,
 //                    Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
 //                ActivityCompat.requestPermissions((Activity) context,
@@ -42,12 +42,12 @@ public class WidgetProvider extends AppWidgetProvider {
 //                    Toast.makeText(context, e.getMessage(),Toast.LENGTH_SHORT).show();
 //                }
 //        }
-
-
-            appWidgetManager.updateAppWidget(appWidgetId, views);
-        }
-
-    }
+//
+//
+//            appWidgetManager.updateAppWidget(appWidgetId, views);
+//        }
+//
+//    }
 
 
     @Override
